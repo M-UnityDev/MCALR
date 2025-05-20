@@ -1,0 +1,28 @@
+@import "/ast/thm/cur/ColorCurrent.css";
+* {
+	border: none;
+	background-image: none;
+	box-shadow: none;
+    font-family: "JetBrains Mono Nerd Font";
+	font-weight: bold;
+	font-size: 16;
+}
+window {background-color: @Background;}
+button {
+    color: #FFFFFF;
+	border-radius:0px;
+	border-color: @Background;
+	background-color: @Background;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+button:focus, button:active {
+	background-color: @Foreground;
+}
+#lock {background-image: image(url("/ast/spr/wlogout/icons/lock.png"));}
+#logout {background-image: image(url("/ast/spr/wlogout/icons/logout.png"));}
+#suspend {background-image: image(url("/ast/spr/wlogout/icons/suspend.png"));}
+#hibernate {background-image: image(url("/ast/spr/wlogout/icons/hibernate.png"));}
+#shutdown {background-image: image(url("/ast/spr/wlogout/icons/shutdown.png"));}
+#reboot {background-image: image(url("/ast/spr/wlogout/icons/reboot.png"));}
