@@ -53,7 +53,7 @@ POSITIONAL_ARGS=()
 	esac
 set -- "${POSITIONAL_ARGS[@]}"
 HomeDirectory=$HOME/
-hyprctl setcursor $CursorTheme 20
+hyprctl setcursor $CursorTheme 20 > /dev/null
 hyprctl hyprpaper preload $Wall > /dev/null
 hyprctl hyprpaper wallpaper ,$Wall > /dev/null
 ln -sf $Logo /ast/spr/cur/LogoCurrent.png
