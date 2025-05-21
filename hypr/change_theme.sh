@@ -1,9 +1,9 @@
 #!/bin/bash
 POSITIONAL_ARGS=()
 	case $1 in
-		-c|--color)
+		-c)
 			case $2 in
-				r|red)
+				r)
 					KittyConfig="/ast/thm/KittyRed.conf"
 					ColorConfig="/ast/thm/ColorRed.css"
 					HyprPaperConfig="/ast/thm/HyprPaperRed.conf"
@@ -13,7 +13,7 @@ POSITIONAL_ARGS=()
 					Wall="/ast/spr/WallRed.png"
 					Logo="/ast/spr/LogoRed.png"
 					;;
-                g|green)
+                g)
                     KittyConfig="/ast/thm/KittyGreen.conf"
                     ColorConfig="/ast/thm/ColorGreen.css"
 					HyprPaperConfig="/ast/thm/HyprPaperGreen.conf"
@@ -23,7 +23,7 @@ POSITIONAL_ARGS=()
 					Wall="/ast/spr/WallGreen.png"
 					Logo="/ast/spr/LogoGreen.png"
                     ;;
-                b|blue)
+                b)
                     KittyConfig="/ast/thm/KittyBlue.conf"
                     ColorConfig="/ast/thm/ColorBlue.css"
 					HyprPaperConfig="/ast/thm/HyprPaperBlue.conf"
@@ -33,7 +33,7 @@ POSITIONAL_ARGS=()
 					Wall="/ast/spr/WallBlue.png"
 					Logo="/ast/spr/LogoBlue.png"
                     ;;
-                w|black)
+                w)
 					KittyConfig="/ast/thm/KittyBlack.conf"
                     ColorConfig="/ast/thm/ColorBlack.css"
 					HyprPaperConfig="/ast/thm/HyprPaperBlack.conf"
@@ -53,20 +53,20 @@ POSITIONAL_ARGS=()
 set -- "${POSITIONAL_ARGS[@]}"
 ChangeTheme () {
 	HomeDirectory=$HOME/
-	hyprctl setcursor $CursorTheme 20 > /dev/null
-	hyprctl hyprpaper preload $Wall > /dev/null
-	hyprctl hyprpaper wallpaper ,$Wall > /dev/null 
-	ln -sf $Logo /ast/spr/cur/LogoCurrent.png 
+	hyprctl setcursor $CursorTheme 20 > /dev/null & disown
+	hyprctl hyprpaper preload $Wall > /dev/null & disown
+	hyprctl hyprpaper wallpaper ,$Wall > /dev/null & disown
+	ln -sf $Logo /ast/spr/cur/LogoCurrent.png &
 	cp -f $KittyConfig /ast/thm/cur/KittyCurrent.conf
 	cp -f $ColorConfig /ast/thm/cur/ColorCurrent.css 
 	cp -f $HyprPaperConfig $HomeDirectory.config/hypr/hyprpaper.conf
 	cp -f $HyprLockConfig /ast/thm/cur/HyprCurrent.conf
 	cp -f $HyprCursorConfig /ast/thm/cur/HyprCursorCurrent.conf
-	kitty @ load-config
+	kitty @ load-config &
 	killall waybar
 	exec waybar &> /dev/null
 }
-exec hyprshade on shake &
+hyprshade on shake &
 ChangeTheme & disown
 sleep 0.3
 hyprshade off 
