@@ -1,5 +1,4 @@
 #!/bin/bash
-
 POSITIONAL_ARGS=()
 	case $1 in
 		-c|--color)
@@ -52,19 +51,22 @@ POSITIONAL_ARGS=()
 			;;
 	esac
 set -- "${POSITIONAL_ARGS[@]}"
-hyprshade on shake &
-HomeDirectory=$HOME/
-hyprctl setcursor $CursorTheme 20 > /dev/null
-hyprctl hyprpaper preload $Wall > /dev/null
-hyprctl hyprpaper wallpaper ,$Wall > /dev/null
-ln -sf $Logo /ast/spr/cur/LogoCurrent.png
-cp -f $KittyConfig /ast/thm/cur/KittyCurrent.conf
-cp -f $ColorConfig /ast/thm/cur/ColorCurrent.css
-cp -f $HyprPaperConfig $HomeDirectory.config/hypr/hyprpaper.conf
-cp -f $HyprLockConfig /ast/thm/cur/HyprCurrent.conf
-cp -f $HyprCursorConfig /ast/thm/cur/HyprCursorCurrent.conf
-killall waybar
-kitty @ load-config
-exec waybar &> /dev/null &
-sleep .1
-hyprshade off
+ChangeTheme () {
+	HomeDirectory=$HOME/
+	hyprctl setcursor $CursorTheme 20 > /dev/null
+	hyprctl hyprpaper preload $Wall > /dev/null
+	hyprctl hyprpaper wallpaper ,$Wall > /dev/null 
+	ln -sf $Logo /ast/spr/cur/LogoCurrent.png 
+	cp -f $KittyConfig /ast/thm/cur/KittyCurrent.conf
+	cp -f $ColorConfig /ast/thm/cur/ColorCurrent.css 
+	cp -f $HyprPaperConfig $HomeDirectory.config/hypr/hyprpaper.conf
+	cp -f $HyprLockConfig /ast/thm/cur/HyprCurrent.conf
+	cp -f $HyprCursorConfig /ast/thm/cur/HyprCursorCurrent.conf
+	kitty @ load-config
+	killall waybar
+	exec waybar &> /dev/null
+}
+exec hyprshade on shake &
+ChangeTheme & disown
+sleep 0.3
+hyprshade off 
