@@ -52,7 +52,7 @@ POSITIONAL_ARGS=()
 			;;
 	esac
 set -- "${POSITIONAL_ARGS[@]}"
-hyprshade on shake
+hyprshade on shake &
 HomeDirectory=$HOME/
 hyprctl setcursor $CursorTheme 20 > /dev/null
 hyprctl hyprpaper preload $Wall > /dev/null
