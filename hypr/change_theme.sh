@@ -52,6 +52,7 @@ POSITIONAL_ARGS=()
 			;;
 	esac
 set -- "${POSITIONAL_ARGS[@]}"
+hyprshade on shake
 HomeDirectory=$HOME/
 hyprctl setcursor $CursorTheme 20 > /dev/null
 hyprctl hyprpaper preload $Wall > /dev/null
@@ -62,7 +63,6 @@ cp -f $ColorConfig /ast/thm/cur/ColorCurrent.css
 cp -f $HyprPaperConfig $HomeDirectory.config/hypr/hyprpaper.conf
 cp -f $HyprLockConfig /ast/thm/cur/HyprCurrent.conf
 cp -f $HyprCursorConfig /ast/thm/cur/HyprCursorCurrent.conf
-hyprshade on shake
 killall waybar
 kitty @ load-config
 exec waybar &> /dev/null &
