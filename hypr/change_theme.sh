@@ -66,7 +66,7 @@ ChangeTheme () {
 	killall waybar
 	exec waybar &> /dev/null
 }
-hyprshade on shake &
+hyprctl keyword decoration:screen_shader "~/.config/hypr/shaders/shake.glsl" > /dev/null
 ChangeTheme & disown
 sleep 0.3
-hyprshade off 
+hyprctl keyword decoration:screen_shader "" > /dev/null
