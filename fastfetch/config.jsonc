@@ -11,11 +11,9 @@
     	"title",
     	"separator",
     	"os",
-    	"host",
     	"kernel",
     	"packages",
     	"shell",
-    	"display",
     	"wm",
     	"wmtheme",
     	"theme",
@@ -30,6 +28,9 @@
     	"battery",
     	"poweradapter",
     	"break",
+		"break",
+		"break",
+		"break",
     	"colors"
   	]
 }
