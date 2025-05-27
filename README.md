@@ -10,4 +10,4 @@ My Arch Linux Dotfiles that can be installed with [MCALRInstaller](https://githu
 
 ### Also they are embeded in [MCALI](https://github.com/M-UnityDev/MCALI)
 
-> I Use Arch btw
+<sub> I Use Arch btw </sub>
