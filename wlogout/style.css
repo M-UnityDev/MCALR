@@ -1,4 +1,4 @@
-@import "$XDG_DATA_HOME/MCALR/thm/cur/ColorCurrent.css";
+@import "../../.local/share/MCALR/thm/cur/ColorCurrent.css";
 * {
 	border: none;
 	background-image: none;
