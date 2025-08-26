@@ -51,21 +51,15 @@ POSITIONAL_ARGS=()
 			;;
 	esac
 set -- "${POSITIONAL_ARGS[@]}"
-ChangeTheme () {
-	HomeDirectory=$HOME
-	ln -sf $HyprPaperConfig $HomeDirectory/.config/hypr/hyprpaper.conf
-	ln -sf $HyprLockConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCurrent.conf
-	ln -sf $HyprCursorConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCursorCurrent.conf
-	hyprctl setcursor $CursorTheme 20 > /dev/null
-	hyprctl hyprpaper preload $Wall > /dev/null
-	hyprctl hyprpaper wallpaper ,$Wall > /dev/null
-	hyprctl keyword decoration:screen_shader "~/.config/hypr/shaders/shake.glsl" > /dev/null
-	ln -sf $Logo $XDG_DATA_HOME/MCALR/spr/cur/LogoCurrent.png
-	ln -sf $KittyConfig $XDG_DATA_HOME/MCALR/thm/cur/KittyCurrent.conf
-	ln -sf $ColorConfig $XDG_DATA_HOME/MCALR/thm/cur/ColorCurrent.css 
-	killall waybar
-	exec waybar &> /dev/null
-}
-ChangeTheme & disown
-sleep 0.4
-hyprctl keyword decoration:screen_shader ""
+HomeDirectory=$HOME
+ln -sf $HyprPaperConfig $HomeDirectory/.config/hypr/hyprpaper.conf
+ln -sf $HyprLockConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCurrent.conf
+ln -sf $HyprCursorConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCursorCurrent.conf
+hyprctl setcursor $CursorTheme 20 > /dev/null
+hyprctl hyprpaper preload $Wall > /dev/null
+hyprctl hyprpaper wallpaper ,$Wall > /dev/null
+ln -sf $Logo $XDG_DATA_HOME/MCALR/spr/cur/LogoCurrent.png
+ln -sf $KittyConfig $XDG_DATA_HOME/MCALR/thm/cur/KittyCurrent.conf
+ln -sf $ColorConfig $XDG_DATA_HOME/MCALR/thm/cur/ColorCurrent.css 
+killall waybar
+exec waybar &> /dev/null
