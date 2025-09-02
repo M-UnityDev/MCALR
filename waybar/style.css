@@ -1,38 +1,43 @@
 @import "../../.local/share/MCALR/thm/cur/ColorCurrent.css";
 * {
-    border: none;
-	border-radius: 0px;
+    border-radius: 0px;
     font-family: "JetBrains Mono Nerd Font";
     font-weight: bold;
     font-size: 16px;
-	text-shadow: none;
-	box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
     color: @Foreground;
-    padding: 0px 14px;
+    padding: 2px 14px;
 }
 tooltip, window#waybar {
     background:@Background;
+    border: 4px solid;
+    border-color: @BackgroundSecond;
 }
 tooltip label {
     padding: 6px;
-	font-size: 14px;
+    font-size: 14px;
 }
-#taskbar {
+#waybar {
+    border: 4px solid;
+    border-color: @BackgroundSecond;
+}
+#taskbar { 
     padding: 0px 12px; 	
 }
 #taskbar button {
+    border: none;
     padding: 0px 4px;
     animation: gradient_f 4s ease-in infinite;
-    transition: all 0.2s cubic-bezier(.4,-1.2,.4,2);
+    transition: all 0.4s cubic-bezier(.4,-1.2,.4,2);
 }
 #taskbar button:hover {
-    background: @Background;
+    background: @BackgroundSecond;
 }
 #taskbar button.active {
     background: @Foreground;
-    padding: 0px 6px;
     animation: gradient_f 8s ease-in infinite;
-    transition: all 0.2s cubic-bezier(.4,-1.2,.4,2);
+    transition: all 0.4s cubic-bezier(.4,-1.2,.4,2);
 }
 #clock {
 	padding-left: 2px;

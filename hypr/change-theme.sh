@@ -6,6 +6,7 @@ POSITIONAL_ARGS=()
 				r)
 					KittyConfig="$XDG_DATA_HOME/MCALR/thm/KittyRed.conf"
 					ColorConfig="$XDG_DATA_HOME/MCALR/thm/ColorRed.css"
+					RofiConfig="$XDG_DATA_HOME/MCALR/thm/RofiRed.rasi"
 					HyprPaperConfig="$XDG_DATA_HOME/MCALR/thm/HyprPaperRed.conf"
 					HyprLockConfig="$XDG_DATA_HOME/MCALR/thm/HyprRed.conf"
 					HyprCursorConfig="$XDG_DATA_HOME/MCALR/thm/HyprCursorRed.conf"
@@ -16,6 +17,7 @@ POSITIONAL_ARGS=()
                 g)
                     KittyConfig="$XDG_DATA_HOME/MCALR/thm/KittyGreen.conf"
                     ColorConfig="$XDG_DATA_HOME/MCALR/thm/ColorGreen.css"
+		   			RofiConfig="$XDG_DATA_HOME/MCALR/thm/RofiGreen.rasi"
 					HyprPaperConfig="$XDG_DATA_HOME/MCALR/thm/HyprPaperGreen.conf"
 					HyprLockConfig="$XDG_DATA_HOME/MCALR/thm/HyprGreen.conf"
 					HyprCursorConfig="$XDG_DATA_HOME/MCALR/thm/HyprCursorGreen.conf"
@@ -26,6 +28,7 @@ POSITIONAL_ARGS=()
                 b)
                     KittyConfig="$XDG_DATA_HOME/MCALR/thm/KittyBlue.conf"
                     ColorConfig="$XDG_DATA_HOME/MCALR/thm/ColorBlue.css"
+		    		RofiConfig="$XDG_DATA_HOME/MCALR/thm/RofiBlue.rasi"
 					HyprPaperConfig="$XDG_DATA_HOME/MCALR/thm/HyprPaperBlue.conf"
 					HyprLockConfig="$XDG_DATA_HOME/MCALR/thm/HyprBlue.conf"
 					HyprCursorConfig="$XDG_DATA_HOME/MCALR/thm/HyprCursorBlue.conf"
@@ -36,6 +39,7 @@ POSITIONAL_ARGS=()
                 w)
 					KittyConfig="$XDG_DATA_HOME/MCALR/thm/KittyBlack.conf"
                     ColorConfig="$XDG_DATA_HOME/MCALR/thm/ColorBlack.css"
+		    		RofiConfig="$XDG_DATA_HOME/MCALR/thm/RofiBlack.rasi"
 					HyprPaperConfig="$XDG_DATA_HOME/MCALR/thm/HyprPaperBlack.conf"
 					HyprLockConfig="$XDG_DATA_HOME/MCALR/thm/HyprBlack.conf"
 					HyprCursorConfig="$XDG_DATA_HOME/MCALR/thm/HyprCursorBlack.conf"
@@ -43,7 +47,7 @@ POSITIONAL_ARGS=()
 					Wall="$XDG_DATA_HOME/MCALR/spr/WallBlack.png"
 					Logo="$XDG_DATA_HOME/MCALR/spr/LogoBlack.png"
                     ;;
-			esac
+				esac
 				;;
 		-*|--*)
 			echo "Unknown option $1"
@@ -61,5 +65,6 @@ hyprctl hyprpaper wallpaper ,$Wall > /dev/null
 ln -sf $Logo $XDG_DATA_HOME/MCALR/spr/cur/LogoCurrent.png
 ln -sf $KittyConfig $XDG_DATA_HOME/MCALR/thm/cur/KittyCurrent.conf
 ln -sf $ColorConfig $XDG_DATA_HOME/MCALR/thm/cur/ColorCurrent.css 
+ln -f $RofiConfig $XDG_DATA_HOME/MCALR/thm/cur/RofiCurrent.rasinc 
 killall waybar
 exec waybar &> /dev/null

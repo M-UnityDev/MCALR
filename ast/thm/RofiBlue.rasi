@@ -1,0 +1,5 @@
+ * {
+    Background: #000016;
+    BackgroundSecond: #000032;
+    Foreground: #0000ff;
+}

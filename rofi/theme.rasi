@@ -1,0 +1,53 @@
+* {
+	font: "JetBrainsMono Nerd Font 12";
+	background-color: @Background;
+	border-radius: 0px;
+	vertical-align: 0.5;
+}
+window {
+	width: 60%;
+	height: 78px;
+	location: south;
+	padding: 12px;
+	border: 4px;
+	border-color: @BackgroundSecond;
+}
+mainbox {
+	orientation: horizontal;
+	children: [ "entry", "listview" ];
+	spacing: 12px;
+}
+element {
+	padding: 4px;
+	border: 4px;
+	border-color: @BackgroundSecond;
+}
+element-text, element-icon {
+	background-color: @Background;
+	padding: 4px;
+	text-color: @Foreground;
+}
+element selected {
+	border-color: @Foreground;
+	background-color: @Background;
+}
+entry {
+	border-color: @Foreground;
+	border: 4px;
+	padding: 8px;
+	font: "JetBrainsMono Nerd Font 12";
+	text-color: @Foreground;
+	expand: false;
+	width: 10%;
+	background-color: @Background;
+}
+listview {
+	spacing: 12px;
+	flow: horizontal;
+	fixed-height: true;
+	lines: 1;
+	columns: 4;
+	expand: true;
+	scrollbar: false;
+	background-color: @Background;
+}
