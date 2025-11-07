@@ -37,15 +37,15 @@ POSITIONAL_ARGS=()
 					Logo="$XDG_DATA_HOME/MCALR/spr/LogoBlue.png"
                     ;;
                 w)
-					KittyConfig="$XDG_DATA_HOME/MCALR/thm/KittyBlack.conf"
-                    ColorConfig="$XDG_DATA_HOME/MCALR/thm/ColorBlack.css"
-		    		RofiConfig="$XDG_DATA_HOME/MCALR/thm/RofiBlack.rasi"
-					HyprPaperConfig="$XDG_DATA_HOME/MCALR/thm/HyprPaperBlack.conf"
-					HyprLockConfig="$XDG_DATA_HOME/MCALR/thm/HyprBlack.conf"
-					HyprCursorConfig="$XDG_DATA_HOME/MCALR/thm/HyprCursorBlack.conf"
-					CursorTheme="Bibata-Original-Black"
-					Wall="$XDG_DATA_HOME/MCALR/spr/WallBlack.png"
-					Logo="$XDG_DATA_HOME/MCALR/spr/LogoBlack.png"
+					KittyConfig="$XDG_DATA_HOME/MCALR/thm/KittyWhite.conf"
+                    ColorConfig="$XDG_DATA_HOME/MCALR/thm/ColorWhite.css"
+		    		RofiConfig="$XDG_DATA_HOME/MCALR/thm/RofiWhite.rasi"
+					HyprPaperConfig="$XDG_DATA_HOME/MCALR/thm/HyprPaperWhite.conf"
+					HyprLockConfig="$XDG_DATA_HOME/MCALR/thm/HyprWhite.conf"
+					HyprCursorConfig="$XDG_DATA_HOME/MCALR/thm/HyprCursorWhite.conf"
+					CursorTheme="Bibata-Original-White"
+					Wall="$XDG_DATA_HOME/MCALR/spr/WallWhite.png"
+					Logo="$XDG_DATA_HOME/MCALR/spr/LogoWhite.png"
                     ;;
 				esac
 				;;
