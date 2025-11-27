@@ -1,0 +1,11 @@
+include=~/.local/share/MCALR/thm/cur/MakoCurrent
+border-size=4
+anchor=top-center
+max-visible=2
+default-timeout=10000
+text-alignment=center
+font=JetBrains Mono Nerd Font 16
+max-icon-size=32
+icon-location=left
+padding=8,16
+width=500
