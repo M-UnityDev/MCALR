@@ -1,6 +1,6 @@
 include=~/.local/share/MCALR/thm/cur/MakoCurrent
 border-size=4
-anchor=top-center
+anchor=bottom-center
 max-visible=2
 default-timeout=10000
 text-alignment=center
