@@ -72,7 +72,6 @@ ln -sf $HyprPaperConfig $HomeDirectory/.config/hypr/hyprpaper.conf
 ln -sf $HyprLockConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCurrent.conf
 ln -sf $HyprCursorConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCursorCurrent.conf
 hyprctl setcursor $CursorTheme 20 > /dev/null
-hyprctl hyprpaper preload $Wall > /dev/null
 hyprctl hyprpaper wallpaper ,$Wall > /dev/null
 openrgb --noautoconnect --color $RGBColor & 
 ln -sf $Logo $XDG_DATA_HOME/MCALR/spr/cur/LogoCurrent.png
