@@ -73,7 +73,8 @@ ln -sf $HyprLockConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCurrent.conf
 ln -sf $HyprCursorConfig $XDG_DATA_HOME/MCALR/thm/cur/HyprCursorCurrent.conf
 hyprctl setcursor $CursorTheme 20 > /dev/null
 hyprctl hyprpaper wallpaper ,$Wall > /dev/null
-openrgb --noautoconnect --color $RGBColor & 
+killall openrgb
+openrgb --noautoconnect --color $RGBColor &> /dev/null
 ln -sf $Logo $XDG_DATA_HOME/MCALR/spr/cur/LogoCurrent.png
 ln -sf $KittyConfig $XDG_DATA_HOME/MCALR/thm/cur/KittyCurrent.conf
 ln -sf $ColorConfig $XDG_DATA_HOME/MCALR/thm/cur/ColorCurrent.css 
