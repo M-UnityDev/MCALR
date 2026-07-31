@@ -9,7 +9,7 @@
     color: @Foreground;
     padding: 2px 14px;
 }
-window#waybar, tooltip {
+window#waybar, tooltip, menu {
     border: 4px solid;
     border-color: @BackgroundSecond;
     background: @Background;
@@ -17,11 +17,6 @@ window#waybar, tooltip {
 tooltip label {
 	padding: 6px;
     font-size: 14px;
-}
-menu {
-	border-radius: 0px;
-	background: @Background;
-	color: @Foreground;
 }
 #taskbar {
     padding: 0px 12px;
