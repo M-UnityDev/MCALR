@@ -8,7 +8,7 @@
     "format-ru": " RU"
     },
     "cpu": {
-        "interval": 10,
+        "interval": 30,
         "format": " {usage}%",
         "on-click": "kitty --start-as=fullscreen btop -p 0"
     },
@@ -38,7 +38,7 @@
     "clock": {
         "format": "{:%H:%M}",
         "format-alt": "{:%d.%m.%Y}",
-        "tooltip-format": "<tt>{:%A}</tt>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "on-click-right": "kitty --hold --title calendar cal -y"
     },
     "network": {
