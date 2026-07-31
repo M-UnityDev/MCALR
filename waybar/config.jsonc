@@ -2,7 +2,7 @@
     "position": "top",
     "modules-left": ["clock","cpu","memory","disk","hyprland/language"],
     "modules-center": ["wlr/taskbar"],
-    "modules-right": ["bluetooth","network","tray","battery","wireplumber","temperature"],
+    "modules-right": ["bluetooth","network","tray","battery","wireplumber","power","temperature"],
     "hyprland/language": {
     "format-en": " EN",
     "format-ru": " RU"
@@ -76,8 +76,20 @@
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
+	"power": {
+		"format" : "⏻",
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml",
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+		}
+	}
     "wireplumber": {
 		"format": " {volume}%",
         "on-click": "kitty --hold --title wpctl wpctl status"
     }
+
 }
