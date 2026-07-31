@@ -2,7 +2,7 @@
     "position": "top",
     "modules-left": ["clock","cpu","memory","disk","hyprland/language"],
     "modules-center": ["wlr/taskbar"],
-    "modules-right": ["bluetooth","network","tray","battery","wireplumber","power","temperature"],
+    "modules-right": ["bluetooth","network","tray","battery","wireplumber","custom/power","temperature"],
     "hyprland/language": {
     "format-en": " EN",
     "format-ru": " RU"
@@ -75,7 +75,7 @@
         "format-alt": "{time} {icon}",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
-	"power": {
+	"custom/power": {
 		"format" : "⏻",
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml",
