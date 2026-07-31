@@ -17,7 +17,7 @@ window#waybar, tooltip, menu {
 }
 menuitem label, tooltip label {
 	padding: 6px;
-	font-size: 16px;
+	font-size: 14px;
 }
 #taskbar {
 	padding: 0px 12px;
