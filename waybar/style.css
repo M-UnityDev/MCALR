@@ -10,7 +10,7 @@
     padding: 2px 14px;
 }
 window#waybar, tooltip {
-	all: unset;
+	all: initial;
     border: 4px solid;
     border-color: @BackgroundSecond;
     background: @Background;
