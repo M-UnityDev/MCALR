@@ -9,18 +9,12 @@
     color: @Foreground;
     padding: 2px 14px;
 }
-tooltip {
+window#waybar, tooltip label {
     border: 4px solid;
     border-color: @BackgroundSecond;
-}
-tooltip label {
     padding: 6px;
     font-size: 14px;
-}
-#waybar {
     background: @Background;
-    border: 4px solid;
-    border-color: @BackgroundSecond;
 }
 #taskbar {
     padding: 0px 12px;
