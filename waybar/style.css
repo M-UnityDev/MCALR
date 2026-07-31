@@ -18,6 +18,9 @@ tooltip label {
     padding: 6px;
     font-size: 14px;
 }
+tooltip {
+	padding: 0px;
+}
 #waybar {
     border: 4px solid;
     border-color: @BackgroundSecond;
