@@ -1,5 +1,6 @@
 @import "../../.local/share/MCALR/thm/cur/ColorCurrent.css";
 * {
+	all: initial;
     border-radius: 0px;
     font-family: "JetBrains Mono Nerd Font";
     font-weight: bold;
