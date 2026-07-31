@@ -18,6 +18,11 @@ tooltip label {
 	padding: 6px;
     font-size: 14px;
 }
+menu {
+	border-radius: 0px;
+	background: @Background;
+	color: @Foreground;
+}
 #taskbar {
     padding: 0px 12px;
 }
