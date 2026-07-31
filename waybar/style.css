@@ -27,8 +27,8 @@ menuitem, tooltip label {
     animation: gradient_f 4s ease-in infinite;
     transition: all 0.4s cubic-bezier(.4,-1.2,.4,2);
 }
-#taskbar button:hover {
-    background: @BackgroundSecond;
+#taskbar button:hover, menu *:hover {
+	background: @BackgroundSecond;
 }
 #taskbar button.active {
     background: @Foreground;
