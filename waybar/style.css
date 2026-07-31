@@ -1,6 +1,5 @@
 @import "../../.local/share/MCALR/thm/cur/ColorCurrent.css";
 * {
-	all: initial;
     border-radius: 0px;
     font-family: "JetBrains Mono Nerd Font";
     font-weight: bold;
@@ -11,6 +10,7 @@
     padding: 2px 14px;
 }
 window#waybar, tooltip {
+	all: unset;
     border: 4px solid;
     border-color: @BackgroundSecond;
     background: @Background;
@@ -18,9 +18,6 @@ window#waybar, tooltip {
 tooltip label {
 	padding: 6px;
     font-size: 14px;
-}
-tooltip box {
-	background: @Background;
 }
 #taskbar {
     padding: 0px 12px;
