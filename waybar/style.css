@@ -8,12 +8,13 @@
     text-shadow: none;
     box-shadow: none;
     color: @Foreground;
+    border-color: @BackgroundSecond;
+    background: @Background;
     padding: 2px 14px;
 }
 window#waybar, tooltip {
     border: 4px solid;
-    border-color: @BackgroundSecond;
-    background: @Background;
+
 }
 tooltip label {
 	padding: 6px;
