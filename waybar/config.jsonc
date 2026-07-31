@@ -1,8 +1,5 @@
 {
-    "layer": "top",
     "position": "top",
-    "exclusive": true,
-    "passthrough": false,
     "modules-left": ["clock","cpu","memory","disk","hyprland/language"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["bluetooth","network","tray","battery","wireplumber","temperature"],
