@@ -22,8 +22,8 @@ tooltip label {
     border: 4px solid;
     border-color: @BackgroundSecond;
 }
-#taskbar { 
-    padding: 0px 12px; 	
+#taskbar {
+    padding: 0px 12px;
 }
 #taskbar button {
     border: none;
