@@ -9,8 +9,7 @@
     color: @Foreground;
     padding: 2px 14px;
 }
-tooltip, window#waybar {
-    background:@Background;
+tooltip {
     border: 4px solid;
     border-color: @BackgroundSecond;
 }
@@ -18,10 +17,8 @@ tooltip label {
     padding: 6px;
     font-size: 14px;
 }
-tooltip {
-	padding: 0px;
-}
 #waybar {
+    background: @Background;
     border: 4px solid;
     border-color: @BackgroundSecond;
 }
