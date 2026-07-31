@@ -14,7 +14,7 @@ window#waybar, tooltip, menu {
     border-color: @BackgroundSecond;
     background: @Background;
 }
-tooltip label {
+menuitem, tooltip label {
 	padding: 6px;
     font-size: 14px;
 }
