@@ -75,7 +75,6 @@
         "format-alt": "{time} {icon}",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
-
 	"power": {
 		"format" : "⏻",
 		"menu": "on-click",
@@ -86,7 +85,7 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
-	}
+	},
     "wireplumber": {
 		"format": " {volume}%",
         "on-click": "kitty --hold --title wpctl wpctl status"
