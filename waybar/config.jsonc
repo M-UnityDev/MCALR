@@ -1,6 +1,6 @@
 {
     "position": "top",
-    "modules-left": ["clock","hyprland/workspaces","cpu","memory","disk","hyprland/language"],
+    "modules-left": ["clock","cpu","memory","disk","hyprland/language"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["bluetooth","network","tray","battery","wireplumber","custom/power","temperature"],
     "hyprland/language": {
