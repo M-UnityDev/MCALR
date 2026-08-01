@@ -17,7 +17,6 @@ window#waybar, tooltip, menu {
 }
 tooltip, menu {
 	padding: 4px;
-	margin: 4px;
 }
 menuitem label, tooltip label {
 	padding: 6px;

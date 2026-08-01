@@ -1,12 +1,15 @@
 {
     "position": "top",
-    "modules-left": ["clock","cpu","memory","disk","hyprland/language"],
+    "modules-left": ["clock","hyprland/workspaces","cpu","memory","disk","hyprland/language"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["bluetooth","network","tray","battery","wireplumber","custom/power","temperature"],
     "hyprland/language": {
     "format-en": " EN",
     "format-ru": " RU"
     },
+	"hyprland/workspaces": {
+		"format": "{id}"
+	}
     "cpu": {
         "interval": 30,
         "format": " {usage}%",
