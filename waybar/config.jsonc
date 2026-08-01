@@ -9,7 +9,7 @@
     },
 	"hyprland/workspaces": {
 		"format": "{id}"
-	}
+	},
     "cpu": {
         "interval": 30,
         "format": " {usage}%",
