@@ -8,7 +8,8 @@
     "format-ru": " RU"
     },
 	"hyprland/workspaces": {
-		"format": "{id}"
+		"format": "{id}",
+		"active-only": true
 	},
     "cpu": {
         "interval": 30,
